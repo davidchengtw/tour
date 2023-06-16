@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css -->
+
+  
+
+
+    <title>展星旅遊為您介紹</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">展星旅遊</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">行程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">常見問答</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- modal -->
+        <section class="modal fade" tabindex="-1" id="booking-modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">立即預訂</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- form -->
+                <form action="#">
+                  <div class="row g-2">
+                    <div class="col-sm-6">
+                      <div class="form-floating">
+                        <input id="email1" type="email" class="form-control" placeholder="youremail">
+                        <label for="email1">會員帳號</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating">
+                        <select id="select1" class="form-select">
+                          <option>台灣桃園, 北歐 - $899</option>
+                          <option>台灣桃園, 歐洲 - $799</option>
+                          <option>台灣桃園, 紐西蘭 - $849</option>
+                        </select>
+                        <label for="select1">立即預定</label>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  
+
+                </form>
+
+               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Chectout</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- carousel -->
+        <section id="hero-carousel" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="assets/img/0002.jpg" class="d-block w-100">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">親臨鬼斧神工的壯麗美景</p>
+                  <h1 class="display-1 fw-border text-capitalize">探索北歐</h1>
+                  <button class="btn btn-primary px-4 py-2 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                    立即預訂
+                  </button>
+               </div>
+              </div>
+            <div class="carousel-item c-item">
+                <img src="assets/img/0001.jpg" class="d-block w-100">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">夢幻歐洲立即啟程</p>
+                  <h1 class="display-1 fw-border text-capitalize">輕奢歐洲</h1>
+                  <button class="btn btn-primary px-4 py-2 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                    立即預訂
+                  </button>
+               </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="assets/img/0003.jpg" class="d-block w-100">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">走進南半球閃亮的一顆星</p>
+                  <h1 class="display-1 fw-border text-capitalize">漫遊紐西蘭</h1>
+                  <button class="btn btn-primary px-4 py-2 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                    立即預訂
+                  </button>
+               </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+         </section>
+         <!-- icon -->
+         <section class="overview">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center" fs-4>
+              <div class="col-md">
+                <i class="bi bi-binoculars-fill me-2"></i>
+                為您客製化的精緻行程
+              </div>
+            
+              <div class="col-md">
+                <i class="bi bi-wallet-fill"></i>
+                現在預約機場接送優惠
+              </div>
+
+              <div class="col-md">
+                <i class="bi bi-calendar-check-fill me-2"></i>
+                行程品質備受旅客肯定
+              </div>
+            </div>
+          </div>
+         </section>
+         <!-- card -->
+         <section id="packages" class="pt-5">
+          <h2 class="text-center my-5">行程介紹</h2>
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="assets/img/0004.jpg" alt="norway" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">北歐旅遊</h5>
+                    <p>精彩北歐旅遊行程，帶您遊覽北歐五國瑞典、丹麥、挪威、芬蘭、冰島，深度遊覽北歐磅博自然景觀，搭乘渡輪欣賞挪威松那峽灣、蓋朗格峽灣美景以及破冰船等，您一定不能錯過！
+                    </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">立即報名</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="assets/img/0005.jpg" alt="norway" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">歐洲旅遊</h5>
+                    <p>無疑是旅人心中的聖地，無論是熱情浪漫的法國、西班牙旅遊、還是風景如畫的捷克、瑞士、德國旅遊，抑或是北歐旅遊，在在讓人心神嚮往，心動不如趕快行動！
+                    </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">立即報名</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="assets/img/0006.jpg" alt="norway" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">紐西蘭旅遊</h5>
+                    <p>對於紐西蘭南島及北島旅遊安排，以最少的行車公里數，搭配國內線航程，節省寶貴時間，著重最精華的紐西蘭景點，紐西蘭不停點台北直飛奧克蘭，讓您輕鬆舒服的長途飛行。
+                    </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">立即報名</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+         </section>
+
+         <!-- FAQ -->
+        
+         <section id="faq" class="py-5">
+          <h2 class="my-5 text-center">常見問答</h2>
+            <div class="container">
+              <div class="accordion w-75 mx-auto" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Q：跟團有什麼好處呢？
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      團體旅遊適合不常出國旅行或不想自己安排行程食宿的旅客，在行程中有專業的導遊帶領參觀旅遊景點及安排餐食住宿，您不必擔心到了當地不知道如何安排行程。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Q：為何在訂房館中看到的房價，與最後確認付款時的房價不同？
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      事實上，房價不是每天都一樣的；房價會隨匯率、淡旺季或展覽、國際會議期間等因素而異動，所以您在訂房過程中看到的是訂房參考價，實際房價需依照實際訂房價格為主。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Q：我如何知道訂位結果呢？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      收到您的訂購單後，我們會儘速處理，但因團體行有一定成行人數，必須視參團人數而決定是否團體能成行，我們會回覆您訂購狀況。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+
+
+         </section>
+         
+
+
+      </main>
+
+      <!-- footer -->
+    
+
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-facebook"></i></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-person-lines-fill"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-google"></i></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-instagram"></i>
+            </a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-linkedin"></i>
+            </a>
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">sunshine.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      
+    
+</body>
+</html>
